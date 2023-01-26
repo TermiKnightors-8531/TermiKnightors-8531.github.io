@@ -5,7 +5,7 @@
 
     </head>
     <body>
-        <h1>Useful things to know about Git</h1>
+        <hr>
         <h1 class="sectHead">Useful things to know about git</h1>
         <h3 class="nestHead">Git Terms</h3>
         <p class="nestInfo">
@@ -16,8 +16,24 @@
             a location for all of your code. The master branch is the default branch, however creating new branches is a good
             idea when testing out a drastic change. Branches are a safe way to share sketchy code without murdering our function master branch! 
         </p>
+        <hr>
         <div>
-            <h1 class="sectHead">Git Etiquette</h1>
+            <h1 class="sectHead">Where it all Starts</h1>
+            <h3 class="nestHead">The Command Pallete</h3>
+            <p class="nestInfo">
+                To open the command pallete in VSCode, press the buttons <strong>CTL+SHIT+P</strong>. This should open
+                something that looks similar to the image below. <br>
+                <img src="/imgs/cmd-pallete-example.png" alt="" style="height:50%">
+                <a id="cmd-pal"></a>
+                <br>Here, we can access all of the commands necesarry to run git and also deploy our robot code when it becomes necesarry. 
+                <strong>To access git commands, open the pallete and type in the git.</strong> This will open up many different suggestions. 
+                We'll address what they all mean later.  
+
+            </p>
+        </div>
+        <div>
+            <hr>
+            <h1 class="sectHead">Commits</h1>
             <h3 class="nestHead">What is a commit?</h3>
             <p class="nestInfo">When you commit to git, you are publishing your changes to everyone in the repository. Normally 
                 you will commit at the end of a coding session or at a land mark. Try not to dump massive amounts of code in one commit. 
@@ -35,6 +51,45 @@
                 At the end of a meeting or after a major change, it's always good to commit. Whenever you log off your computer for the day after coding, 
                 <strong>commit your changes</strong>. 
             </p>
+            <h3 class="nestHead">How do I commit?</h3>
+            <p class="nestInfo">
+                Although you can use the <a href="#cmd-pal">command pallete</a>, it's much easier to the use the spaghetti and
+                meatball icon. <br> 
+                <img src="/imgs/GitPage.png" alt="" style="height:30%; width:20%">
+                <br> Once you've opened this icon, if you've modified files, you'll see them at the right. 
+                To add a file to your next commit, click the plus arrow next to it. When you commit, try to group files based on 
+                the changes that you have had. If you've changed code for the arm in two files, add those files to your commit. 
+                Then, add a commit message to describe what you did. <br><br> You can hit the purple commit checkmark. Repeat this process 
+                for all of the groups of files that you are going to commit. Then, a button will appear that allows you to sync changes. 
+                Click this and then you've completed all of your commits!
+            </p>
+            <h3 class="nestHead" style="color:#ab0101">What if there's a merge conflict?</h3>
+            <p class="nestInfo">Find your programming head. It's difficult to explain in writing! </p>
+            <hr>
+        </div>
+        <div>
+            <h1 class="sectHead">Branches</h1>
+            <h3 class="nestHead">What is a branch?</h3>
+            <p class="nestInfo">
+                A branch is a place to store code within our repository. It is a way for us to work on code in parallel without 
+                murdering our master branch. The master branch is a location where our main code lives. 
+                For example of branches, if one of us is working on the arm code, and another is working on 
+                button mapping, this is a great time to use branches. The development can happen independently without conflicts.
+                When ready, we can merge these changes into our master branch. 
+            </p>
+            
+            <h3 class="nestHead">How do I create a branch?</h3>
+            <p class="nestInfo">
+                To navigate and move between branches, open the <a href="#cmd-pal">command pallete</a>. To create a new branch,
+                type <strong>git: create branch from...</strong> into the command pallete. Enter a name for the new branch. Normally,
+                this name should be a short and descriptive one. Things like "arm test" or "button mapping" are good options. After this, 
+                you will most often create the branch from the main one.<br>
+                <img src="/imgs/git-branch.png" alt="">
+                <br> Once you have finished and are ready to commit, you must first publish the branch. There will be a button in the 
+                spaghetti and meatball icon to do so!
+            </p>
+            <h3 class="nestHead">How do I change branches?</h3>
+            <p class="nestInfo">Enter the <a href="#cmd-pal">command pallete</a></p>
         </div>
     </body>
 </html>

@@ -7,6 +7,19 @@ body {
     font-size:13px;
 }
 
+hr {
+    color:black;
+    border:3px solid;
+}
+
+.important {
+    font-size: 25px;
+    font-weight:bolder;
+    margin-left:40px;
+    font-family: monospace;
+    color: #ab0101;
+}
+
 .sectHead {
     color:white;
     font-family: monospace;
