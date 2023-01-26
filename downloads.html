@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/style/stylesheet.css">
+        
+    </head>
+    <body>
+        <h1>Getting Ready to Program!</h1>
+        <div>
+            <p>Before getting started, you'll need to install a few things first. Let's go!</p>
+            <h3 class="sectHead">Installing Tools</h3>
+            <h5 class="nestHead">WPILIB Base Tools</h5>
+            <a href="https://github.com/wpilibsuite/allwpilib/releases/tag/v2023.2.1" class="nestInfo">Click here to download WPILIB Tools</a>
+            <p class="nestInfo">Follow the link to the github page. Scroll down until you see the files to download. Select the windows download.</p>
+            <img src="/imgs/WPI-Install.png" style="margin-left:30px;width:50%;height:50%;" alt="">
+            <p class="nestInfo">Once the file has completed downloading, double click it and select the WPILIB-Installer.</p>
+            <img src="/imgs/WPI-click.png" style="margin-left:30px;width:50%;height:50%;" alt="">
+            <p class="nestInfo">
+                Once the installer has opened and started running, it will ask if you want to install tools or everything. You want to install everything!
+                <br>After this screen, you will be prompted with four options. Select the option to download for this computer only. 
+                The installer should then complete installation. 
+            </p>
+            <br>
+            <a href="https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html" class="nestInfo" style="color:rgb(120, 6, 6)">If you're having trouble, click here for a more in-depth guide.</a>
+        </div>
+        <div>
+            <h5 class="nestHead">Git Software</h5>
+            <p class="nestInfo">Git is a platform where we can collaboratively manage our code for this season. We can share code among each other and delegate tasks for different things.</p>
+            <a href="https://git-scm.com/downloads" class="nestInfo">Git Download</a>
+            <p class="nestInfo">
+                Select the windows download. When the download is complete, open the installer. There are lots of prompts, but <strong> the default selctions are adequate for our purposes.</strong>
+                <br>Click through all of the prompts. Git should be installed now! <br>
+                Next, navigate to <a href="https://github.com" class="link"> this link</a> to create a github account. Once you have created your account, you can contribute. 
+            </p>
+            <br><br><br><br><br>
+        </div>
+        <div>
+            <h1 class="sectHead">VSCode Introduction</h1>
+            <h3 class="nestHead">What is VSCode?</h3>
+            <p class="nestInfo">VSCode is a place for us to write code. It contains all of the tools that we need to write robot code, to interface with Git and do all of the work that we need to program.</p>
+            <h3 class="nestHead">Your first code</h3>
+            <p class="nestInfo">
+                You can open VSCode from your desktop. First we'll start with cloning a <a href="/gitgloassary.html#repository" class="link"> repository</a>
+                When VSCode has opened, the side bar will have numerous options. Click the one that looks like a spaghetti noodle with meatballs (that's a technical term). <br>
+                Then click the clone repo button. 
+                <img src="/imgs/git-clone-button.png" alt="" style="height:5%; width:50%"> <br>
+                At the top, it will ask you to paste a url. Provide the link to your desired github repository. For now, we'll use: https://github.com/TermiKnightors-8531/SparkTests. 
+                Once you have pasted this, hit enter. It will prompt you for a folder; place it in a place where you can find it. Perhaps create an FRC folder. Once you follow all the prompts, 
+                you can open the repository in your current window. When VSCode asks you if you would like to open the new repo, click open! <strong>Congrats</strong> Git may
+                ask for verification, but I don't know what that looks like. You programmers are smart! You can figure it out and if not, let your programming head know!
+            </p>
+            <h5 class="nestHead">Now, for a sucky part: setting your username and email. </h5>
+            <p class="nestInfo">
+                This isn't that bad, but it's a bit of terminal work. To open the terminal in VSCode, press the keys, CTL+SHIFT+`. This will open a terminal.
+                <img src="/imgs/terminalhelp.png" alt="" style="height:50%; width:75%"><br>
+                Click the down-arrow button in the terminal and select git bash. 
+                First, paste <strong> git config --global user.name "FIRSTNAME LASTNAME"</strong> into the git terminal, changing the first and last name as appropriate. 
+                Hit enter to submit. Similarly, paste <strong> git config --global user.email "email or fake email"</strong> into the terminal. You don't need to provide your email. 
+                You can just enter random letters if you want. 
+                We know where to contact you if you screw something up :). <strong>Make sure to keep the quotation marks. They are NECESARRY</strong>
+            </p>
+            <h1 style="font-size:50px">You're ready to go!</h1>
+        </div>
+
+    </body>
+</html>
