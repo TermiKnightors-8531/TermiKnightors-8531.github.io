@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/style/stylesheet.css">
+    </head>
+    <body>
+        <div>
+            <hr>
+            <h3 class="sectHead">Getting Things Moving</h3>
+            <a href="https://codedocs.revrobotics.com/java/com/revrobotics/package-summary.html" class="nestHead">RevRobotics API Docs</a>
+
+        </div>
+        <div>
+            <hr>
+            <h3 class="sectHead">Working with Motors</h3>
+
+            <h3 class="nestHead">Importing the Libs</h3>
+            <p class="nestInfo">
+                Add the following line in your import space: 
+                <span class="code"> import com.revrobotics.*;</span>
+            </p>
+
+            <h3 class="nestHead">How do I create a motor object?</h3>
+            <p class="nestInfo">
+                The CANSparkMax object is found under the <span class="className">CANSparkMax</span>
+                class. It takes two parameters: (canID, MotorType). The first parameter is the canID (an int), set within
+                motor controller. The second parameter is an <a href="https://www.w3schools.com/java/java_enums.asp" target="_blank">enum</a>
+                . The two types, MotorType.kBrushed and MotorType.kBrushless, are used to select the motor type. If we're working with a NEO, 
+                use the brushless type. Otherwise, use brushed! In full, the code looks like this: <br> <br> 
+                
+                <span class="code"> CANSparkMax m1 = CANSparkMax(1, MotorType.kBrushless);</span>
+                <br><br>
+            </p>
+            <h3 class="nestHead">Moving the Motor</h3>
+            <p class="nestInfo">
+                To bring the motor to a set point, you can utilize the method, .set(d), where d is a value from -1 to 1. For example, the code 
+                <span class="code">m1.set(.3)</span> sets the m1 motor object to 30%. 
+            </p>
+
+            <h3 class="nestHead">What if the motor is going the wrong direction</h3>
+            <p class="nestInfo">Add this line: <span class="code">m1.setInverted(true);</span></p>
+        </div>
+        <div>
+            <hr>
+            <h3 class="sectHead">Joystick Controls</h3>
+            <h3 class="nestHead">Creating an XBox Controller</h3>
+            <p class="nestInfo"> 
+                First, place this statement into your imports: <span class="code">import edu.wpi.first.wpilibj.XboxController;</span>
+                The controller object takes one int as a parameter. This is the specific port on the driver station. To declare
+                a controller at index 0, use the following code: <br><br>
+                 <span class="code">XboxController xb = XboxController(0);</span>
+            </p>
+            <h3 class="nestHead">Methods for Getting Buttons</h3>
+            <p class="nestInfo">
+                A complete reference of all of the methods can be found 
+                <a href="https://first.wpi.edu/wpilib/allwpilib/docs/release/java/edu/wpi/first/wpilibj/XboxController.html">here</a>. 
+                <br><br>
+                <strong>An important note: </strong> There are 3 different ways to read a button. The first, .get[ specific button], 
+                reads the value of a button at the instant of reading. The other two go hand in hand, the get pressed and get released. This is helpful
+                when trying to initiate a task or stop it. Rather than reading the value every time, the getPressed and getReleased methods 
+                allow for safer starting and stopping of tasks that need to start and end in precise ways. 
+            </p>
+            <h3 class="nestHead">Referencing Joystick Position</h3>
+            <p class="nestInfo">
+                Once again, a complete reference of all of the methods can be found 
+                <a href="https://first.wpi.edu/wpilib/allwpilib/docs/release/java/edu/wpi/first/wpilibj/XboxController.html">here</a>. 
+                <br><br>
+
+                The two methods that we will use most often are <span class="code">xboxObject.getLeftY();</span> and
+                <span class="code">xboxObject.getRightY();</span> These methods return a double from -1 to 1 signifying the 
+                position of the respective joystick on the XBoxController.
+            </p>
+            <h3 class="nestHead">Creating Generic Joystick Objects</h3>
+            <p class="nestInfo">
+                First, import the library through this line <span class="code">import </span>
+                The joystick object takes one parameter. This is the id of the joystick in the driver station. 
+                <span class="code">Joystick j = new Joystick(0);</span>. 
+                <br><br>
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/style/stylesheet.css">
+        <title></title>
+    </head>
+    <body>
+        
+        <div>
+            <h3 class="sectHead">Basic File Structure</h3>
+            <h3 class="nestHead">When in doubt, write your code in Robot.java</h3>
+            <p class="nestInfo">
+                For beginning purposes, code should be written in the /src/.../ Robot.java file in the appropriate method.
+            </p>
+            <h3 class="nestHead">{Write in the Curly Brackets}</h3>
+            <p class="nestInfo">
+                Code is (almost) always written within the curly brackets of a method. 
+            </p>
+            <img src="/imgs/FileBaseHighlighted.png" style="width:75%;" alt="">
+            <h3 class="nestHead">Import Space</h3>
+            <p class="nestInfo">
+                The section highligted in pink is where you can import all of the necesarry libraries. For example, the line 
+                <span class="code">import edu.wpi.first.wpilibj.TimedRobot;</span>
+            </p>
+            <h3 class="nestHead">Init vs. Periodic</h3>
+            <p class="nestInfo">
+                An init method is called at the beginning of a certain time period and only runs once. This is a good place to 
+                initialize necesarry variables or reset entries that only need to happen once. At the beginning of the teleop periodic,
+                the init method is only called once. The periodic methods are called over and over.
+                For example, the teleop periodic runs repeatedly whenever the robot is in teleop mode. 
+            </p>
+            <h3 class="nestHead">Robot Methods</h3>
+            <p class="nestInfo">
+                These methods are called whenver the robot is enabled. This is a good time to service things such as pneumatics or read values
+                that must be monitored always. 
+            </p>
+            <h3 class="nestHead">Autonomous Methods</h3>
+            <p class="nestInfo">
+                These methods only run for the autonomous period. 
+            </p>
+            <h3 class="nestHead">Teleop Methods</h3>
+            <p class="nestInfo">
+                These methods only run for the autonomous period. 
+            </p>
+            <h3 class="nestHead">Disabled Methods</h3>
+            <p class="nestInfo">
+                We don't often use these methods. 
+            </p>
+            <h3 class="nestHead">Test Methods</h3>
+            <p class="nestInfo">
+                This can be used to test certain functionality without it having to running during a match. 
+            </p>
+        </div>
+    </body>
+</html>
