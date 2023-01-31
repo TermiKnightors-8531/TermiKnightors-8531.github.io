@@ -12,6 +12,21 @@ hr {
     border:3px solid;
 }
 
+.code {
+    color:white;
+    font-size: 19px;
+    display:inline;
+    background-color:#026843
+}
+
+.className {
+    color:#ffffff;
+    font-family:Arial;
+    font-size: 19px;
+    display:inline;
+    font-weight:bolder;
+}
+
 .important {
     font-size: 25px;
     font-weight:bolder;
