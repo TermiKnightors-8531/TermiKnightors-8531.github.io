@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hardware Configuration</title>
+        <link rel="stylesheet" href="/style/stylesheet.css">
+    </head>
+    <body>
+        <hr>
+        <h3 class="sectHead">Configuration of SparkMax</h3>
+        
+        <h3 class="nestHead">What is an ID</h3>
+        <p class="nestInfo">
+            All of the motor controllers are daisy chained together. Each one hears the same message, but only 
+            responds to ones addressed to its ID. 
+        </p>
+        <h3 class="nestHead">How do I set an ID?</h3>
+        <p class="nestInfo">
+            First log in to the robotics computer and open the RevRobotics software. Ensure that the SparkMax is 
+            connected to battery power and connect an orange USB cable between the SparkMax and the computer. You
+            should see a screen similar to the one below. Click on the desired motor controller to select it.  
+            <img src="/imgs/rev/revstart.png" style="width:90%" alt="">
+            <br><br>
+            Then another screen will pop up. To properly configure the motor controller, first determine what type of motor you want to control. 
+            If you are working with a NEO motor, select the <strong>Motor Type</strong> as brushless. Otherwise, 
+            select brushed! In the CAN ID field, enter your desired id. <br>
+            <span class="important">
+                To upload your information to the controller, scroll down and click <strong>Burn Flash</strong>
+            </span><br>
+
+            <img src="/imgs/rev/rev-specific.png" style="width:75%" alt="">
+            <br>
+        </p>
+            
+        <h3 class="nestHead">What if I get the message CAN Bus unavailable?</h3>
+        <p class="nestInfo">
+            First, ensure that the SparkMax is connected to battery power. Also, try flipping the USB connector
+            orientation in the SparkMax. This shouldn't matter, but sometimes it does...
+            <strong>Another good solution is to spam the Scan for Devices button while screaming internally.</strong>
+        </p>
+    </body>
+</html>
