@@ -28,7 +28,7 @@
                 . The two types, MotorType.kBrushed and MotorType.kBrushless, are used to select the motor type. If we're working with a NEO, 
                 use the brushless type. Otherwise, use brushed! In full, the code looks like this: <br> <br> 
                 
-                <span class="code"> CANSparkMax m1 = CANSparkMax(1, MotorType.kBrushless);</span>
+                <span class="code"> CANSparkMax m1 = new CANSparkMax(1, MotorType.kBrushless);</span>
                 <br><br>
             </p>
             <h3 class="nestHead">Moving the Motor</h3>
@@ -67,7 +67,7 @@
                 First, place this statement into your imports: <span class="code">import edu.wpi.first.wpilibj.XboxController;</span>
                 The controller object takes one int as a parameter. This is the specific port on the driver station. To declare
                 a controller at index 0, use the following code: <br><br>
-                 <span class="code">XboxController xb = XboxController(0);</span>
+                 <span class="code">XboxController xb = new XboxController(0);</span>
             </p>
             <h3 class="nestHead">Methods for Getting Buttons</h3>
             <p class="nestInfo">
